@@ -1,14 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="pixel_art_maker.css">
+    <title>Pixel Art Maker</title>
 </head>
 
 <body>
-
+    <main>
+        <header>
+            <p>Canvas Size:</p>
+            <!-- This gives the user the option to select what canvas size they want -->
+            <select name="grid-size" id="grid-size">
+                <option value="25">small</option>
+                <option value="40">large</option>
+            </select>
+        </header>
+        <div class="canvas">
+            <!-- Canvas dynamically generated with JS -->
+        </div>
+        <div class="tools">
+            <!-- Each li corresponds to a paint color -->
+            <!-- The background color of the li is set using the style property and the id of the li -->
+            <ul>
+                <li id="#000000" class="selected"></li>
+                <li id="#FFFFFF"></li>
+                <li id="#666666"></li>
+                <li id="#999999"></li>
+                <li id="#CCCCCC"></li>
+                <li id="#E93320"></li>
+                <li id="#27D859"></li>
+                <li id="#3C1CC9"></li>
+                <br>
+                <li id="#F0EE0F"></li>
+                <li id="#CD11EE"></li>
+                <li id="#F39A0C"></li>
+                <li id="#1EA5E1"></li>
+                <li id="#A07B3E"></li>
+                <li id="#EF56BB"></li>
+                <li id="#F1D41E"></li>
+                <li id="#1CE3D1"></li>
+            </ul>
+            <!-- New color picker -->
+            <div id="new-color">
+                <p>New Color:</p>
+                <input type="color" id="color">
+            </div>
+            <!-- Reset the board -->
+            <button id="reset">Reset</button>
+        </div>
+        <p id="help">
+            Right click (and drag) to erase. <br>
+            Changing the canvas size will reset the board.
+        </p>
+    </main>
+    <script src="pixel_art_maker.js"></script>
 </body>
 
 </html>
