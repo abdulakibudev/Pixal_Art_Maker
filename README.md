@@ -1,4 +1,4 @@
-# Pixal_Art_Maker
+# Pixel_Art_Maker
 
 # Announcements:
 
