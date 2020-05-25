@@ -99,6 +99,12 @@ const paintBrush = () => {
         
     });
 
+    // This add rudimentary support for touch <=================================================================
+    document.body.addEventListener("touchmove", (e) => {
+        const ele = document.elementFromPoint(e.touches[0].clientX, e.touches[0].clientY);
+        ele.style.backgroundColor = selectedColor;
+    })
+
     // When the mouse button is released
     document.body.addEventListener("mouseup", (e) => {
         // console.log("up", e.which);
