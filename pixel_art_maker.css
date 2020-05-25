@@ -101,22 +101,26 @@ li {
 
 /* Media Queries */
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     li {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
 
     td {
-        width: 14px;
-        min-width: 14px;
-        max-width: 14px;
-        height: 14px;
-        min-height: 14px;
-        max-height: 14px;
+        width: 13px;
+        min-width: 13px;
+        max-width: 13px;
+        height: 13px;
+        min-height: 13px;
+        max-height: 13px;
     }
 
     .canvas {
         box-shadow: 0 0 10px rgba(0, 0, 0, .30);
+    }
+
+    #help {
+        display: none;
     }
 }
