@@ -1,8 +1,8 @@
 # Pixal_Art_Maker
 
-#Announcements:
+# Announcements:
 
-#Future Improvements:
+# Future Improvements:
 1. Being able to add new colors permanently
 2. Being able to save
 3. Implementing an undo button
