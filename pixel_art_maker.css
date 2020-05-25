@@ -98,3 +98,25 @@ li {
 #help {
     font-size: 1.1rem;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 800px) {
+    li {
+        width: 25px;
+        height: 25px;
+    }
+
+    td {
+        width: 14px;
+        min-width: 14px;
+        max-width: 14px;
+        height: 14px;
+        min-height: 14px;
+        max-height: 14px;
+    }
+
+    .canvas {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .30);
+    }
+}
